@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: "blog",
     component: BlogComponent,
-    data: { animation: 'isBottom' }
+    data: { animation: 'isBottom' } 
   },
   {
     path: "contact",
