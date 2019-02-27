@@ -16,9 +16,9 @@
                       <li class="tab"><a routerLink="/contact" routerLinkActive="active">CONTACT</a></li>
                   </ul>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
+              <div class="col-md-4 col-sm-4 col-xs-8 dynamic" (click)="toggleMenu()">
                   <a href="mailto:hi@tavonline.net" class="pull-right site-btn icon hidden-xs">Hire Me <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-                  <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                  <div class="hamburger pull-right hidden-lg hidden-md" ><i class="fa fa-bars" aria-hidden="true"></i></div>
                   <div class="hidden-md social-icons pull-right"> 
                       <a class="fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
                       <a class="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
@@ -27,30 +27,16 @@
                   </div>
               </div>
           </div>
-      <div class="menuout"><div class="menuin" style="display: none;"><ul class="tabs">
+      <div class="menuout" [@toggleMenu]="menuState"><div class="menuin" (click)="toggleMenu()"><ul class="tabs">
                       <li class="tab">
                           <a class="home-btn" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
                       </li>
-                      <li class="tab"><a href="#resume">RESUME</a></li>
-                      <li class="tab"><a href="#portfolio">PORTFOLIO</a></li>
-                      <li class="tab"><a href="#blog">BLOG</a></li>
-                      <li class="tab"><a href="#contact">CONTACT</a></li>
+                      <li class="tab"><a routerLink="/resume" routerLinkActive="active">RESUME</a></li>
+                      <li class="tab"><a routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
+                      <li class="tab"><a routerLink="/blog" routerLinkActive="active">BLOG</a></li>
+                      <li class="tab"><a routerLink="/contact" routerLinkActive="active">CONTACT</a></li>
                   
-                      <li class="tab">
-                          <a class="home-btn" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="tab"><a href="#resume" class="">RESUME</a></li>
-                      <li class="tab"><a href="#portfolio" class="">PORTFOLIO</a></li>
-                      <li class="tab active"><a href="#blog" class="active">BLOG</a></li>
-                      <li class="tab"><a href="#contact" class="">CONTACT</a></li>
-                  </ul></div></div><div class="menuout"><div class="menuin" style="display: none;"><ul class="tabs">
-                      <li class="tab">
-                          <a class="home-btn" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="tab"><a href="#resume" class="">RESUME</a></li>
-                      <li class="tab"><a href="#portfolio" class="">PORTFOLIO</a></li>
-                      <li class="tab active"><a href="#blog" class="active">BLOG</a></li>
-                      <li class="tab"><a href="#contact" class="">CONTACT</a></li>
+                      
                   </ul></div></div></nav>
   </header>
       
