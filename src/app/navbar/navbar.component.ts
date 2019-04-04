@@ -1,5 +1,6 @@
 import { Component, OnInit,  } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -26,7 +27,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class NavbarComponent implements OnInit {
 
  
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -35,6 +36,10 @@ export class NavbarComponent implements OnInit {
  
   toggleMenu() {
     this.menuState = this.menuState === 'closed' ? 'opened' : 'closed';
+  }
+
+  test(){
+    this.router.navigate(['/'], { queryParams: { term: 11 } });
   }
 
  

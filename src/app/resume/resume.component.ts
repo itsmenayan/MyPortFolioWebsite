@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+
+import { AngularFirestore } from 'angularfire2/firestore';
+
+
 
 @Component({
   selector: 'app-resume',
@@ -7,9 +13,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  public items: Observable<any[]>;
+  
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    db: AngularFirestore
+  ) {
+    this.items = db.collection('/testimonials').valueChanges();
+    console.log("Data"+this.items);
+
+    
+  }
+ 
 
   ngOnInit() {
+    
   }
 
 }

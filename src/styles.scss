@@ -1,34 +1,3 @@
-/* --------------------------------- */
-/* Css Styles                        */
-/*---------------------------------- */
-
-/**
-
-
-	
-
-/* Table of Content
-==================================================
-	
-	1. Body and Core Css
-	2. Profile Section
-	3. Navigation
-	4. Home Section
-	5. Resume Section
-    6. Portfolio Section
-    7. Blog Section
-    8. Testimonial Section
-    9. Contact Section
-    10. Footer Section
-    11. Realtor Portfolio 
-    12. Photo Gallery Widgets
-    13. Table Widget
-    14. Pricing Widget
-    15. Events Widget
-    16. Discography Widget
-    17. Responsive
-
-/*------------------------ 1 Body and Core Css ------------------------*/		
 
 .routeAnim {
     position: relative;
@@ -1278,6 +1247,7 @@ ul.timeline{
 .testimonials .comment .top-section .name-info .name{
     font-size: 14px;
     font-weight: 500;
+    display: block;
 }
 
 .testimonials .comment .top-section .name-info .job{
@@ -1336,12 +1306,12 @@ ul.timeline{
 
 footer .footer{
     background: #1e1e1e;
-    min-height: 70px;
+    min-height: 40px;
     color: #fff;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    line-height: 72px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 40px;
 }
 
 footer .footer .name{
