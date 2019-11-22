@@ -39,7 +39,7 @@ export class NavbarComponent implements OnInit {
   }
 
   test(){
-    this.router.navigate(['/'], { queryParams: { term: 11 } });
+    this.router.navigate(['/']);
   }
 
  
